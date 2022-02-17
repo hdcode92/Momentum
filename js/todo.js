@@ -29,7 +29,6 @@ function paintToDo(newTodo) {
     toDoList.appendChild(li);
 }
 
-
 function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDoInput.value;

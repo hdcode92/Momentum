@@ -1,0 +1,62 @@
+.backg {
+  width: 100%;
+  height: auto;
+  margin-top: -20px;
+  position: absolute;
+  z-index: -1;
+}
+
+#clock,
+#weather {
+  color: white;
+  display: flex;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+#weather {
+  color: white;
+  display: flex;
+  padding-top: 0px;
+}
+
+#weather span:last-child {
+  margin-left: 10px;
+}
+
+#greeting {
+  color: white;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.inputbox {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.inputbox__name {
+  height: 75px;
+  width: 500px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+
+  border-bottom-color: white;
+  border-bottom-width: 10px;
+  background: transparent;
+  font-size: 75px;
+  color: white;
+}
+
+.inputbox__name__login {
+  height: 75px;
+  width: 500px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  background: transparent;
+}

@@ -8,21 +8,17 @@
     <title>Momentum App</title>
 </head>
 <body>
-    <img class="backg" />
-    <div><h2 id="clock">00:00:00</h2></div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-        </div>
-    <h1 class="hidden " id="greeting" ></h1>
-    <form class="inputbox" id="login-form">
-        <input class="inputbox__name"
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+        <input
         required
         maxlength="15"
         type="text"
-        placeholder="" />
+        placeholder="what is your name?" />
+        <input type="submit" value="Log in" />
     </form>
-    <form class="inputbox" id="todo-form">
+    <h1 class="hidden" id="greeting" ></h1>
+    <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" />
     </form>
     <ul id="todo-list">
@@ -35,7 +31,7 @@
     <span></span>
     <span></span>
     </div>
-    <img class="backg" />
+    <img class="backG" />
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
