@@ -1,3 +1,8 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bolder;
+}
+
 .backg {
   width: 100%;
   height: auto;
@@ -12,6 +17,7 @@
   display: flex;
   margin-left: 20px;
   padding-top: 20px;
+  font-size: large;
 }
 
 #weather {
@@ -30,6 +36,7 @@
   display: flex;
   justify-content: center;
   padding-top: 150px;
+  animation: appear ease-in-out 0.5s;
 }
 
 .inputbox {
@@ -41,14 +48,16 @@
 .inputbox__name {
   height: 75px;
   width: 500px;
+  border-style: solid;
   border-top: transparent;
   border-right: transparent;
   border-left: transparent;
 
   border-bottom-color: white;
-  border-bottom-width: 10px;
+  border-bottom-width: 5px;
   background: transparent;
   font-size: 75px;
+  font-weight: 300px;
   color: white;
 }
 
@@ -59,4 +68,84 @@
   border-right: transparent;
   border-left: transparent;
   background: transparent;
+}
+
+.todo-form {
+  height: 75px;
+  width: 500px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  background: transparent;
+}
+
+#quote {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  animation: appear 0.5s ease-in-out;
+}
+
+#quote span:first-child {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#todo-form input {
+  height: 50px;
+  width: 500px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+
+  border-bottom-color: white;
+  border-bottom-width: 5px;
+  background: transparent;
+  font-size: 30px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+}
+
+button {
+  margin-left: 20px;
+  border-radius: 15%;
+  background-color: transparent;
+  color: white;
+  font-weight: 300%;
+}
+
+#todo-list {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+li,
+#greetings {
+  animation: appear ease-in-out 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
 }
