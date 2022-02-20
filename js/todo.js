@@ -17,6 +17,7 @@ function deleteToDo(event) {
 }
 
 function paintToDo(newTodo) {
+    
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
@@ -27,6 +28,7 @@ function paintToDo(newTodo) {
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+    
 }
 
 function handleToDoSubmit(event){
@@ -49,9 +51,11 @@ function sayHello(item){
 }
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
+
 if(savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
+    
 };
 
